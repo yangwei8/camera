@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_video_iv_photo"
+            android:layout_width="@dimen/x464"
+            android:layout_height="@dimen/x272" />
+
+        <ImageView
+            android:id="@+id/item_video_iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_play" />
+
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@id/item_video_iv_photo"
+            android:layout_marginBottom="@dimen/x15"
+            android:layout_marginRight="@dimen/x10"
+            android:background="@drawable/gallery_item_selector"
+            android:button="@null"
+            android:enabled="false" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_video_tv_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="01:00"
+            android:layout_marginRight="3dp"
+            android:textColor="@color/normal_text_color"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/item_video_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color" />
+    </LinearLayout>
+
+</LinearLayout>

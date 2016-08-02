@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/frame_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/public_load_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/loading_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone" >
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/anim_rotate_new" />
+
+            <TextView
+                android:id="@+id/loadingText"
+                style="@style/letv_text_15_ff5d5d5d"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/loading"
+                android:text="@string/public_loading_text" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/error"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/net_error_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="5dip"
+                android:contentDescription="@null"
+                android:src="@drawable/net_null_normal" />
+
+            <TextView
+                android:id="@+id/errorTxt1"
+                style="@style/letv_text_15_444444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/net_error_flag"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="14dip"
+                android:gravity="center"
+                android:text="@string/public_loading_no_net" />
+
+            <TextView
+                android:id="@+id/errorTxt2"
+                style="@style/letv_text_13_ffa1a1a1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/errorTxt1"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dip" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/full_net_error"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/letv_color_33000000"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/full_episode_play_errer_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/hot_play_error_net_null"
+                android:textColor="@color/program_item_trance_white2"
+                android:textSize="15.0sp" />
+
+            <TextView
+                android:id="@+id/full_episode_play_errer_retry"
+                style="@style/letv_text_15_blue_white_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/full_episode_play_errer_tip"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/btn_blue_selecter"
+                android:paddingBottom="4dip"
+                android:paddingLeft="14dip"
+                android:paddingRight="14dip"
+                android:paddingTop="4dip"
+                android:text="@string/try_again"
+                android:textColor="@drawable/blue_white_text_selecter"
+                android:textSize="13.0sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</merge>

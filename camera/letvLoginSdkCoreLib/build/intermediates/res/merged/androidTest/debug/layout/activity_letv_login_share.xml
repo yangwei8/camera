@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/letv_color_F1F1F1"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imageView_loginShareActivity_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/back_selecter" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="18dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/zhanghao" />
+
+            <TextView
+                android:id="@+id/textview_sontitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView1"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="15dp"
+                android:text="@string/register_tip"
+                android:textColor="@color/letv_color_666666"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/linearlayout_haslogeed_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_sontitle"
+                android:layout_marginTop="14dp"
+                android:orientation="vertical" >
+
+                <com.letv.loginsdk.view.MyListView
+                    android:id="@+id/listView_show_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@color/letv_color_F1F1F1"
+                    android:scrollbars="none"
+                    android:smoothScrollbar="false" >
+                </com.letv.loginsdk.view.MyListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearlayout_moreaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout_haslogeed_account"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22.5dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageView_pulldown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="7dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/pulldown" />
+
+                <TextView
+                    android:id="@+id/moreaccount_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="true"
+                    android:paddingLeft="8dp"
+                    android:text="@string/more_account"
+                    android:textColor="@drawable/blue_clicked_text_selecter"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/linearlayout_moreaccount"
+                android:layout_marginTop="90dp" >
+
+                <TextView
+                    android:id="@+id/otheraccount_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20.5dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="true"
+                    android:text="@string/login_use_other_metherd"
+                    android:textColor="@drawable/blue_clicked_text_selecter"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/service_phone_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/otheraccount_textView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="120dp"
+                    android:visibility="gone"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/customer_service_title"
+                        android:textColor="@color/letv_color_999999"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/service_phonenumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7.2dp"
+                        android:clickable="true"
+                        android:text="@string/customer_service_phone"
+                        android:textColor="@color/letv_color_999999"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/activity_letv_login_share.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/layout/activity_letv_login_share.xml -->

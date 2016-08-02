@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/personal_info_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/letv_color_fffafafa"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/back_selecter" />
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/letv_text_18sp_ff444444"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="6"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:text="@string/personalinfo_title" />
+
+            <TextView
+                android:id="@+id/skip_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:text="@string/skip"
+                android:textColor="@color/letv_color_00a0e9"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/personal_info_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/letv_color_ffffffff" >
+
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/personalinfo_head_image" />
+
+                    <com.letv.loginsdk.view.CircleImageView
+                        android:id="@+id/head_iamgeview"
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="30dp"
+                        android:background="@drawable/default_head"
+                        app:border_color="@color/letv_color_ffffffff"
+                        app:border_width="1dp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <RelativeLayout
+                    android:id="@+id/nickname_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/find_item_selector" >
+
+                    <TextView
+                        android:id="@+id/text_nicheng"
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:text="@string/personalinfo_head_nickname" />
+
+                    <TextView
+                        android:id="@+id/nick_name"
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/text_nicheng"
+                        android:layout_marginRight="30dp"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:hint="@string/personalinfo_no_data"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/login_color_bfbfbf"
+                        android:textCursorDrawable="@drawable/cursor_color"
+                        android:gravity="right" />
+                    
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/icon_arrow_right" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <RelativeLayout
+                    android:id="@+id/gender_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/find_item_selector" >
+
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/personalinfo_gender" />
+
+                    <TextView
+                        android:id="@+id/gender_textview"
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:hint="@string/personalinfo_no_data"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/login_color_bfbfbf"
+                        android:gravity="right"  />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <RelativeLayout
+                    android:id="@+id/birthday_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/find_item_selector" >
+
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/personalinfo_birthday" />
+
+                    <TextView
+                        android:id="@+id/birthday_textview"
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:hint="@string/personalinfo_no_data"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/login_color_bfbfbf" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <RelativeLayout
+                    android:id="@+id/address_area_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/find_item_selector" >
+
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/personalinfo_area" />
+
+                    <TextView
+                        android:id="@+id/area_textview"
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:hint="@string/personalinfo_no_data"
+                        android:textColor="#000000"
+                        android:textColorHint="@color/login_color_bfbfbf" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/letv_color_ffdfdfdf"
+                    android:visibility="gone" />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <TextView
+                    android:id="@+id/modify_password_layout_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <RelativeLayout
+                    android:id="@+id/modify_password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/find_item_selector" >
+
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:text="@string/personalinfo_modify_password" />
+
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/icon_arrow_right" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/modify_password_layout_bottomline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/letv_color_ffdfdfdf" />
+                
+                <TextView
+                    android:id="@+id/logout_layout_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    android:background="@color/letv_color_ffdfdfdf" />
+
+                <RelativeLayout
+                    android:id="@+id/logout_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:visibility="gone"
+                    android:background="@drawable/find_item_selector" >
+
+                    <TextView
+                        style="@style/letv_text_15sp_ff444444"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/personalinfo_logout" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/logout_layout_bottomline"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:visibility="gone"
+                    android:background="@color/letv_color_ffdfdfdf" />
+                
+                <Button
+                    android:id="@+id/update_userinfo_btn"
+                    android:layout_width="fill_parent"
+                    android:layout_height="48.5dp"
+                    android:layout_marginBottom="15dip"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:layout_marginTop="25dip"
+                    android:background="@drawable/btn_blue_selecter"
+                    android:gravity="center"
+                    android:text="@string/save"
+                    android:textColor="@color/login_color_8dc6ed"
+                    android:textSize="21sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/personal_padding_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/letv_color_33000000"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

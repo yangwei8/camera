@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="46dp"
+    android:background="@color/letv_color_F1F1F1"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp" >
+
+    <TextView
+        android:id="@+id/getvfCode_line_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/letv_color_b7b7b7" />
+
+    <ImageView
+        android:id="@+id/getvfCode_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/getvfCode_line_tv"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/verificationcode_imageview" />
+
+    <com.letv.loginsdk.view.ClearEditText
+        android:id="@+id/getvfCode_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/getvfCode_imageview"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toLeftOf="@+id/vc_image"
+        android:layout_toRightOf="@+id/getvfCode_imageview"
+        android:background="@null"
+        android:hint="@string/vfcode_hint_text"
+        android:maxLength="20"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/login_color_bfbfbf"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:textSize="17sp" >
+
+        <requestFocus />
+    </com.letv.loginsdk.view.ClearEditText>
+
+    <ImageView
+        android:id="@+id/vc_image"
+        android:layout_width="90dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/login_check_code_bg" />
+
+</RelativeLayout>

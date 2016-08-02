@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="310dp"
+    android:layout_height="240dp" 
+    android:focusable="true"  
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="@string/verificationcode_dialog_title"
+        android:textColor="@color/letv_color_333333"
+        android:textSize="21sp" />
+
+    <TextView
+        android:id="@+id/textView_left_line"
+        android:layout_width="0.5dp"
+        android:layout_height="57dp"
+        android:layout_alignLeft="@+id/textView_top_line"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="37dp"
+        android:background="@color/letv_color_cdcdcd" />
+
+    <TextView
+        android:id="@+id/textView_top_line"
+        android:layout_width="290dp"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="@color/letv_color_cdcdcd" />
+
+    <TextView
+        android:id="@+id/textView_right_line"
+        android:layout_width="0.5dp"
+        android:layout_height="57dp"
+        android:layout_alignRight="@+id/textView_top_line"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="37dp"
+        android:background="@color/letv_color_cdcdcd" />
+
+    <TextView
+        android:id="@+id/textView_bottom_line"
+        android:layout_width="290dp"
+        android:layout_height="0.5dp"
+        android:layout_alignBottom="@+id/textView_left_line"
+        android:layout_alignLeft="@+id/textView_left_line"
+        android:background="@color/letv_color_cdcdcd" />
+
+    <EditText
+        android:id="@+id/verificationCode_dialog_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView_bottom_line"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/textView_left_line"
+        android:background="@null"
+        android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:hint="@string/verificationcode_dialog_hint_text"
+        android:maxLength="4"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="@color/login_color_bfbfbf"
+        android:textSize="18sp" >
+    </EditText>
+
+    <ImageView
+        android:id="@+id/verificationCode_dialog_imageview"
+        android:layout_width="84dp"
+        android:layout_height="57dp"
+        android:layout_above="@+id/textView_bottom_line"
+        android:layout_toLeftOf="@+id/textView_right_line" />
+	
+    <Button
+        android:id="@+id/verfication_dialog_sure_btn"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/btn_blue_selecter"
+        android:gravity="center"
+        android:text="@string/ensure"
+        android:textColor="@color/login_color_8dc6ed"
+        android:textSize="20sp" />
+
+</RelativeLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/verficationcode_dialog_layout.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/layout/verficationcode_dialog_layout.xml -->

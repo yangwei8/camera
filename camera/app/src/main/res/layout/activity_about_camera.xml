@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_color"
+    >
+    <include layout="@layout/navigation_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/device_name"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:id="@+id/tv_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="@string/wifi_name"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/version2"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_xing_hao"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="LV180"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/mechine_version"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_fw_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="xxxxxxxxxxxxxxxxx"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/pns"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_uuid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="xxxxxxxxxxxxxxxxx"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/wifi_address"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_wifi_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="xxxxxxxxxxxxxxxxx"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/blutooth_address"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_bluetooth_address"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="xxxxxxxxxxxxxxxxx"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/mac_version"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_hard_version"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="xxxxxxxxxxxxxxxxx"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,147 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+def AAVersion = '3.3.2'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+    sourceSets.main.jni.srcDirs = []
+    defaultConfig {
+        applicationId "com.leautolink.leautocamera"
+        minSdkVersion 18
+        targetSdkVersion 22
+        versionCode 2030
+        versionName "2.0.3"
+        multiDexEnabled true
+        ndk {
+            moduleName "libvideoutil"
+            ldLibs "log", "z", "m", "jnigraphics", "android"
+            abiFilters "armeabi", "armeabi-v7a", "x86"
+        }
+    }
+
+    dexOptions {
+        incremental false
+        preDexLibraries = false
+        javaMaxHeapSize "4g"
+    }
+
+    signingConfigs {
+        release {
+            //这样写就得把camera.jk文件放在项目目录
+            storeFile file("camera.jks")
+            storePassword "leautocamera"
+            keyAlias "release"
+            keyPassword "leautocamera"
+        }
+    }
+    packagingOptions {
+        exclude 'lib/armeabi/libweibosdkcore.so'
+    }
+    sourceSets{
+        main{
+            jniLibs.srcDirs = ['src/main/jniLibs']
+        }
+    }
+
+    android.dexOptions {
+        jumboMode = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.release
+
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        applicationVariants.all { variant ->
+            variant.outputs.each { output ->
+                if (variant.buildType.name == "debug") {
+                    def apk = output.outputFile;
+//                    def newName = apk.name.replace(".apk", "_" + defaultConfig.versionName + ".apk");
+                    def newName = "LeDashCam_" + defaultConfig.versionName + ".apk";
+//                    newName = newName
+//                            .replace(variant.buildType.name, "develop")
+//                            .replace(project.name, "LeDashCam");
+
+                    if (output.zipAlign) {
+                        output.outputFile = new File(apk.parentFile, newName.replace("-unaligned", ""));
+
+                    } else {
+                        output.outputFile = new File(apk.parentFile, newName);
+                    }
+                } else {
+                    def apk = output.outputFile;
+                    def newName = "LeDashCam_" + defaultConfig.versionName + "player_21.apk";
+                    if (output.zipAlign) {
+                        output.outputFile = new File(apk.parentFile, newName.replace("-unaligned", ""));
+
+                    } else {
+                        output.outputFile = new File(apk.parentFile, newName);
+                    }
+                }
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations:$AAVersion"
+    compile project(':cameracmdlibrary')
+    compile project(':customuilibrary')
+    compile project(':letvLoginSdkCoreLib')
+    compile project(':PushSDK')
+    compile 'com.android.support:multidex:1.0.0'
+    compile 'com.google.code.gson:gson:2.7'
+    compile 'com.android.support:design:22.2.1'
+    compile 'com.android.support:gridlayout-v7:22.0.0'
+    compile 'com.android.support:recyclerview-v7:22.2.1'
+
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    compile 'com.facebook.rebound:rebound:0.3.8'
+    compile files('src/main/libs/AMap_Location_V2.6.0_20160628.jar')
+    compile files('src/main/libs/AMap_2DMap_V2.9.0_20160525.jar')
+    compile files('src/main/libs/AMap_Search_V3.3.0_20160616.jar')
+    compile files('src/main/libs/gesture-imageview.jar')
+    compile files('src/main/libs/protobuf-java-2.5.0.jar')
+    compile files('src/main/libs/agnes_tracker-0.9.1.jar')
+    compile files('src/main/libs/android-async-http-1.4.9.jar')
+    compile files('src/main/libs/httpclient-4.4.1.1.jar')
+    compile files('src/main/libs/cmf-sdk-1.0.31-arm32&64.jar')
+    compile files('src/main/libs/1.6_componentplayer.jar')
+}
+// hook the dex task for some additional parameters
+afterEvaluate {
+    tasks.matching {
+        it.name.startsWith('dex')
+    }.each { dx ->
+        if (project.android.defaultConfig.multiDexEnabled) {
+            if (dx.additionalParameters == null) {
+                dx.additionalParameters = []
+            }
+            dx.additionalParameters += '--minimal-main-dex'
+            // for test multidex dex , here set max idx 10000, this apk total methods is about 22251.
+            dx.additionalParameters += '--set-max-idx-number=48000'
+            dx.additionalParameters += '--multi-dex'
+        }
+    }
+}
+
+apt {
+    arguments {
+        androidManifestFile 'app/src/main/AndroidManifest.xml'
+    }
+}

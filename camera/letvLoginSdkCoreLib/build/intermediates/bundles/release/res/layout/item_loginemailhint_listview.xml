@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/textView_item_emailhint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingBottom="4dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="17sp" />
+
+</RelativeLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/item_loginemailhint_listview.xml -->

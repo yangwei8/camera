@@ -1,0 +1,18 @@
+<!--?xml version=1.0 encoding=utf-8?-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+>
+
+    <TextView
+        android:background="#00000000"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:text="@string/onloading"
+        android:textSize="14sp"
+        android:textColor="@color/normal_text_color"
+        />
+</LinearLayout>

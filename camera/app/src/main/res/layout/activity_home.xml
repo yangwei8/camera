@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.leautolink.leautocamera.ui.activity.HomeActivity">
+
+    <include layout="@layout/navigation_bar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/main_content"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <RadioGroup
+                android:id="@+id/rg_tabs"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+
+                android:orientation="horizontal">
+
+                <com.leautolink.leautocamera.ui.view.customview.MyRadioButton
+                    android:id="@+id/tab_rb_discover"
+                    style="@style/RBStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:checked="true"
+                    android:drawableTop="@drawable/home_activity_discover_icon"
+
+                    android:singleLine="true"
+                    android:text="@string/find" />
+
+                <com.leautolink.leautocamera.ui.view.customview.MyRadioButton
+                    android:id="@+id/tab_rb_edr"
+                    style="@style/RBStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/home_activity_camera_icon"
+                    android:singleLine="true"
+                    android:text="@string/camera" />
+
+                <!--android:background="@drawable/home_activity_share_icon"-->
+
+                <RadioButton
+                    android:id="@+id/tab_rb_share"
+                    style="@style/RBStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:singleLine="true"
+
+                    />
+
+                <com.leautolink.leautocamera.ui.view.customview.MyRadioButton
+                    android:id="@+id/tab_rb_photo"
+                    style="@style/RBStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/home_activity_photo_icon"
+                    android:singleLine="true"
+                    android:text="@string/album" />
+
+                <com.leautolink.leautocamera.ui.view.customview.MyRadioButton
+                    android:id="@+id/tab_rb_user"
+                    style="@style/RBStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.0"
+                    android:drawableTop="@drawable/home_activity_user_icon"
+                    android:singleLine="true"
+                    android:text="@string/mine" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rb_share_btn"
+                style="@style/RBStyle"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/home_activity_share_icon"
+                android:singleLine="true" />
+        </RelativeLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

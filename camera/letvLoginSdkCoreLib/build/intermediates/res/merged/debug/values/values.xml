@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="arrEmailNames">
+        <item>163.com</item>
+        <item>sina.com</item>
+        <item>qq.com</item>
+        <item>sohu.com</item>
+        <item>126.com</item>
+        <item>gmail.com</item>
+        <item>hotmail.com</item>
+        <item>yahoo.com</item>
+        <item>outlook.com</item>
+        <item>foxmail.com</item>
+        <item>letv.com</item>
+    </string-array>
+    <string-array name="monthNameArray">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="letv_base_bg">#fffafafa</color>
+    <color name="letv_color_0073b4">#0073b4</color>
+    <color name="letv_color_00a0e9">#00a0e9</color>
+    <color name="letv_color_0f000000">#0f000000</color>
+    <color name="letv_color_33000000">#33000000</color>
+    <color name="letv_color_333333">#333333</color>
+    <color name="letv_color_444444">#444444</color>
+    <color name="letv_color_5895ed">#5895ED</color>
+    <color name="letv_color_666666">#666666</color>
+    <color name="letv_color_99000000">#99000000</color>
+    <color name="letv_color_999999">#999999</color>
+    <color name="letv_color_F1F1F1">#F1F1F1</color>
+    <color name="letv_color_a0a0a0">#a0a0a0</color>
+    <color name="letv_color_b7b7b7">#b7b7b7</color>
+    <color name="letv_color_cccccc">#cccccc</color>
+    <color name="letv_color_cdcdcd">#cdcdcd</color>
+    <color name="letv_color_e0e0e0">#e0e0e0</color>
+    <color name="letv_color_ff5895ed">#ff5895ed</color>
+    <color name="letv_color_ff5d5d5d">#ff5d5d5d</color>
+    <color name="letv_color_ff5dccff">#ff5dccff</color>
+    <color name="letv_color_ffa1a1a1">#ffa1a1a1</color>
+    <color name="letv_color_ffdfdfdf">#ffdfdfdf</color>
+    <color name="letv_color_ffe9e9e9">#ffe9e9e9</color>
+    <color name="letv_color_ffec8e1f">#ffec8e1f</color>
+    <color name="letv_color_fff6f6f6">#fff6f6f6</color>
+    <color name="letv_color_fffafafa">#fffafafa</color>
+    <color name="letv_color_ffffff">#ffffff</color>
+    <color name="letv_color_ffffffff">#ffffffff</color>
+    <color name="login_color_000000">#000000</color>
+    <color name="login_color_0f93de">#0f93de</color>
+    <color name="login_color_424242">#424242</color>
+    <color name="login_color_6b6b6b">#6b6b6b</color>
+    <color name="login_color_80dddddd">#80dddddd</color>
+    <color name="login_color_8dc6ed">#8dc6ed</color>
+    <color name="login_color_F3F3F3">#F3F3F3</color>
+    <color name="login_color_F8F8F8">#F8F8F8</color>
+    <color name="login_color_bfbfbf">#bfbfbf</color>
+    <color name="login_color_e7e7e7">#e7e7e7</color>
+    <color name="login_color_ff242424">#ff242424</color>
+    <color name="login_color_ffa1a1a1">#ffDBDBDB</color>
+    <color name="login_color_ffdfdfdf">#ffdfdfdf</color>
+    <color name="login_color_fff6f6f6">#fff6f6f6</color>
+    <color name="program_item_trance_white2">#cccccc</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="transparent">#00000000</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
+    <declare-styleable name="Emojicon"><attr format="dimension" name="emojiconSize"/><attr format="enum" name="emojiconAlignment"><enum name="bottom" value="0"/><enum name="baseline" value="1"/></attr><attr format="integer" name="emojiconTextStart"/><attr format="integer" name="emojiconTextLength"/><attr format="boolean" name="emojiconUseSystemDefault"/></declare-styleable>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="_image_personal_head_circle_diameter">78px</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="letv_dimens_space_15">15dp</dimen>
+    <dimen name="line_height">1px</dimen>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="imageview_atts" type="id"/>
+    <item name="pagecard_view_default" type="id"/>
+    <item name="scale_type" type="id"/>
+    <item name="view_tag" type="id"/>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="account_freeze_prompt_dialog_Yesbutton">解冻</string>
+    <string name="account_freeze_prompt_dialog_content">请点击解冻，重置密码后登录</string>
+    <string name="account_freeze_prompt_dialog_title">您的账号已经被冻结</string>
+    <string name="account_label">乐视账号</string>
+    <string name="account_token_failure_dialog_Yesbutton">重新登录</string>
+    <string name="account_token_failure_dialog_content">登录或重新输入账号密码</string>
+    <string name="account_token_failure_dialog_title">当前账号已过期，请选择其他账号</string>
+    <string name="account_type" translatable="false">com.letv.LoginSDKAccount</string>
+    <string name="action_settings">Settings</string>
+    <string name="bring_paramers_error">携带的参数出错</string>
+    <string name="cancle">取消</string>
+    <string name="channel_filter_no_content">暂无内容#点我重新筛选</string>
+    <string name="choose_country_area_title">国家/地区</string>
+    <string name="click_next_step_agree">点击下一步表示同意乐视的</string>
+    <string name="click_send_agree">点击立即发送表示同意乐视的</string>
+    <string name="countdown_get_again_text_middle">于</string>
+    <string name="countdown_get_again_text_one">如未收到短信，请</string>
+    <string name="countdown_get_again_text_two">S后 </string>
+    <string name="customer_service_phone">400 030 0104</string>
+    <string name="customer_service_title">客服电话：</string>
+    <string name="ensure">确定</string>
+    <string name="find_password_activity_title">找回密码</string>
+    <string name="find_password_default_phone_number">1069032901305788</string>
+    <string name="find_password_send_soom">立即发送</string>
+    <string name="find_password_tip">编辑短信6–16位密码发送至</string>
+    <string name="find_password_tip2">密码格式：6–16位数字、字母或符号。暂不支持海外通道</string>
+    <string name="get_auth_coude_again">重新获取</string>
+    <string name="hot_play_error_net_null">网络不给力，请检查网络设置</string>
+    <string name="input_error_hint">帐号或密码不正确，请重新输入</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_phone_num">请输入手机号码</string>
+    <string name="input_right_authcode">请输入正确的激活码</string>
+    <string name="input_right_nickname">昵称应由4–32个中文/字母/下滑线组成</string>
+    <string name="input_right_password">密码应由6–16位数字/字母组成</string>
+    <string name="input_right_phone_num">请输入正确的手机号码</string>
+    <string name="input_right_verification">请输入正确的验证码</string>
+    <string name="login_activity_title">登录乐视帐号</string>
+    <string name="login_not_install_weixin">您还没有安装微信，请先去下载微信</string>
+    <string name="login_number_hint_text">请输入手机号/邮箱</string>
+    <string name="login_number_hintuser_text">请输入正确的手机号/邮箱</string>
+    <string name="login_password_hint_text">请输入密码</string>
+    <string name="login_password_hintpass_text">请输入正确的密码</string>
+    <string name="login_qq">腾讯QQ登录</string>
+    <string name="login_rightvf_hint_text">验证码错误，请重输！</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_use_other_metherd">使用其他方式登录</string>
+    <string name="login_vf_hint_text">请输入验证码</string>
+    <string name="login_weibo">新浪微博登录</string>
+    <string name="loginshare_activity_title">登录乐视网</string>
+    <string name="logout_prompt_dialog_content">是否确认退出</string>
+    <string name="logout_prompt_dialog_title">退出账号后将无法同步个人信息，</string>
+    <string name="logout_prompt_dialog_yesbutton">退出</string>
+    <string name="message_login_authcode_title">短信验证码已发送至您的手机</string>
+    <string name="message_register">短信注册</string>
+    <string name="message_send_success">短信下发成功</string>
+    <string name="more_account">更多账号</string>
+    <string name="moreaboutusactivity_webtitle">乐视网</string>
+    <string name="net_no">网络连接失败，请检查您的网络</string>
+    <string name="next_step">下一步</string>
+    <string name="nicknamechange_prompt_dialog_content">是否保存该修改</string>
+    <string name="nicknamechange_prompt_dialog_title">当前昵称已经被修改</string>
+    <string name="nicknamechange_prompt_dialog_yesbutton">保存</string>
+    <string name="notevfcode_text">短信验证码登录</string>
+    <string name="now_register">立即注册</string>
+    <string name="password_hint_text2">6–16位字母或者数字</string>
+    <string name="personalinfo_area">地区</string>
+    <string name="personalinfo_birthday">生日</string>
+    <string name="personalinfo_birthday_over_current_date">生日超过当前日期</string>
+    <string name="personalinfo_day">日</string>
+    <string name="personalinfo_find_password">找回密码</string>
+    <string name="personalinfo_gender">性别</string>
+    <string name="personalinfo_head_image">头像</string>
+    <string name="personalinfo_head_nickname">昵称</string>
+    <string name="personalinfo_head_nickname_cannot_empty">昵称不能为空</string>
+    <string name="personalinfo_head_nickname_modifyrule">昵称规则为 4–32字符，支持中文，字母，下划线</string>
+    <string name="personalinfo_logout">退出登录</string>
+    <string name="personalinfo_men">男</string>
+    <string name="personalinfo_modify_password">修改密码</string>
+    <string name="personalinfo_no_data">未填写</string>
+    <string name="personalinfo_title">个人信息</string>
+    <string name="personalinfo_update_head_image_failure">更新头像失败</string>
+    <string name="personalinfo_women">女</string>
+    <string name="personalinfo_year">年</string>
+    <string name="phone_login">登  录</string>
+    <string name="phone_number_hint_text">请输入手机号</string>
+    <string name="public_loading_datanull">未获取到内容#点击页面刷新</string>
+    <string name="public_loading_no_net">网络未连接#请检查网络后点击页面刷新</string>
+    <string name="public_loading_text">正在加载，请稍候…</string>
+    <string name="register">注  册</string>
+    <string name="register_check_mob">该手机号已注册，请直接登录</string>
+    <string name="register_password_subtitle">6–16位字母，数字或符号</string>
+    <string name="register_password_title">密码格式为</string>
+    <string name="register_success_to_login">注册成功</string>
+    <string name="register_tip">一个帐号玩转所有乐视服务</string>
+    <string name="register_title">注册乐视帐号</string>
+    <string name="save">保  存</string>
+    <string name="seletc_from_camera">拍照上传</string>
+    <string name="seletc_from_image">从相册选择</string>
+    <string name="send_message_code_success">激活码下发成功</string>
+    <string name="service_agreement">服务条款细则及隐私政策</string>
+    <string name="shortcut_nickname_dialog_content">您更好的参与互动，建议修改昵称</string>
+    <string name="shortcut_nickname_dialog_subtitle">您当前正使用系统默认昵称，为方便</string>
+    <string name="shortcut_nickname_dialog_title">修改昵称提示</string>
+    <string name="shortcut_nickname_dialog_yesbutton">修改</string>
+    <string name="skip">跳过</string>
+    <string name="third_part_login_tip">第三方登录用户暂无初始密码</string>
+    <string name="toast_auth_code">请输入验证码</string>
+    <string name="try_again">刷新重试</string>
+    <string name="verificationcode_dialog_hint_text">请输入右侧图片验证码</string>
+    <string name="verificationcode_dialog_title">请填写图片验证码</string>
+    <string name="vfcode_hint_text">右侧图片验证码</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授权</string>
+    <string name="weibosdk_demo_toast_auth_failed">授权失败</string>
+    <string name="weibosdk_demo_toast_auth_success">授权成功</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="letv_text_12sp_ff666666">
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="letv_text_13_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="letv_text_13_ffa1a1a1">
+        <item name="android:textColor">@color/letv_color_ffa1a1a1</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="letv_text_13_ffec8e1f">
+        <item name="android:textColor">@color/letv_color_ffec8e1f</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="letv_text_14sp_ff00a0e9">
+        <item name="android:textColor">#00a0e9</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="letv_text_14sp_ff666666">
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="letv_text_15_444444">
+        <item name="android:textColor">@color/letv_color_444444</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="letv_text_15_blue_white_style">
+        <item name="android:textColor">@drawable/blue_white_text_selecter</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/btn_blue_selecter</item>
+    </style>
+    <style name="letv_text_15_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="letv_text_15_ff5d5d5d">
+        <item name="android:textColor">@color/letv_color_ff5d5d5d</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="letv_text_15sp_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="letv_text_18sp_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+    <style name="popwindow_animationPreview">
+        <item name="android:windowEnterAnimation">@anim/popwindow_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_fade_out</item>
+    </style>
+    <style name="prompt_dialog_with_corner" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@drawable/verfication_dialog_shape_corner</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="textview">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="textview_bottom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:background">#a0a0a0</item>
+    </style>
+</resources>

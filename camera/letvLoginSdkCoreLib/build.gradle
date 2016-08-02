@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        minSdkVersion 18
+        targetSdkVersion 22
+        multiDexEnabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['jniLibs']
+        }
+
+    }
+}
+
+dependencies {
+    compile files('libs/letvloginsdkcorelib.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/open_sdk_r5509.jar')
+    compile files('libs/weiboSDKCore_3.1.4.jar')
+}

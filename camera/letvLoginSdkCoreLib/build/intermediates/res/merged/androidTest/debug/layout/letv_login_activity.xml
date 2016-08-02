@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/letv_color_F1F1F1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp" >
+
+        <ImageView
+            android:id="@+id/imageView_loginActivity_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/back_selecter"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/top_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"/>
+
+        <ImageView
+            android:id="@+id/imageView_loginActivity_Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/close_selecter"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textview_sontitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register_tip"
+        android:textColor="@color/letv_color_666666"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_account"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" >
+
+        <TextView
+            android:id="@+id/login_number_line_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/letv_color_b7b7b7" />
+
+        <ImageView
+            android:id="@+id/login_number_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_number_line_tv"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/account" />
+
+        <com.letv.loginsdk.view.ClearEditText
+            android:id="@+id/account_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/login_number_line_tv"
+            android:layout_alignRight="@+id/login_number_line_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/login_number_imageview"
+            android:background="@null"
+            android:hint="@string/login_number_hint_text"
+            android:paddingLeft="7dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/login_color_bfbfbf"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="17sp" >
+        </com.letv.loginsdk.view.ClearEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_password"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" >
+
+        <TextView
+            android:id="@+id/password_line_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/letv_color_b7b7b7" />
+
+        <ImageView
+            android:id="@+id/password_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password_line_tv"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/password" />
+
+        <ImageView
+            android:id="@+id/plaintext_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password_line_tv"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/eye_default"
+            android:clickable="true" />
+
+        <com.letv.loginsdk.view.ClearEditText
+            android:id="@+id/password_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/password_line_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="15dp"
+            android:layout_toLeftOf="@+id/plaintext_imageview"
+            android:layout_toRightOf="@+id/password_imageview"
+            android:background="@null"
+            android:hint="@string/password_hint_text2"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/login_color_bfbfbf"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="17sp" >
+        </com.letv.loginsdk.view.ClearEditText>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_include_getvfcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/includ_getvfCode"
+            layout="@layout/layout_include_getvfcode"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_loginbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp" >
+
+        <TextView
+            android:id="@+id/notevflogin_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="19dp"
+            android:clickable="true"
+            android:text="@string/notevfcode_text"
+            android:textColor="@drawable/blue_clicked_text_selecter"
+            android:visibility="gone"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="388dp"
+            android:layout_height="48.5dp"
+            android:layout_below="@+id/notevflogin_textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="19dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/btn_blue_selecter"
+            android:text="@string/phone_login"
+            android:textColor="@color/login_color_8dc6ed"
+            android:textSize="21sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/linearlayout_zhucewagnjimima"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp">
+
+        <TextView
+            android:id="@+id/register_now_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/boundary"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/now_register"
+            android:textColor="@drawable/blue_clicked_text_selecter"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/boundary"
+            android:layout_width="1dp"
+            android:layout_height="16dp"
+            android:layout_centerInParent="true"
+            android:background="@color/letv_color_cccccc" />
+
+        <TextView
+            android:id="@+id/forget_password_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/boundary"
+            android:gravity="center"
+            android:clickable="true"
+            android:text="@string/find_password_activity_title"
+            android:textColor="@drawable/blue_clicked_text_selecter"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/third_login_icon_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/qq_loginicon_imageView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="19dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/bt_qqlogin_iconselector" />
+
+        <ImageView
+            android:id="@+id/weixin_loginicon_imageView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/bt_weixinlogin_iconselector" />
+
+        <ImageView
+            android:id="@+id/sina_loginicon_imageView"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="19dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:layout_marginBottom="60dp"
+            android:src="@drawable/bt_sinalogin_iconselector" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/letv_login_activity.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/layout/letv_login_activity.xml -->

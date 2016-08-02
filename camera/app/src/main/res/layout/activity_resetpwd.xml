@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="280dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_bg"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/textview_bg"
+        android:gravity="center"
+        android:text="@string/dialog_lable"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_notice"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:textColor="#727272"
+        android:text="@string/dialog_reset_pwd_check"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_bg_no"
+            android:text="@string/btn_no_lable"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_bg_yes"
+            android:text="@string/btn_yes_lable"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="70dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_yes"
+            android:text="@string/btn_close_lable"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+             />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:color="@color/letv_color_0073b4"/>
+    <item android:color="@color/letv_color_00a0e9"/>
+</selector>
+<!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/drawable/blue_clicked_text_selecter.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/drawable/blue_clicked_text_selecter.xml -->

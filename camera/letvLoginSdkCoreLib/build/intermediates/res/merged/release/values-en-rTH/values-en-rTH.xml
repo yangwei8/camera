@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values-en-rTH/arrays.xml -->
+    <eat-comment/>
+    <string-array name="arrEmailNames">
+        <item>163.com</item>
+        <item>sina.com</item>
+        <item>qq.com</item>
+        <item>sohu.com</item>
+        <item>126.com</item>
+        <item>gmail.com</item>
+        <item>hotmail.com</item>
+        <item>yahoo.com</item>
+        <item>outlook.com</item>
+        <item>foxmail.com</item>
+        <item>letv.com</item>
+    </string-array>
+    <string-array name="monthNameArray">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values-en-rTH/strings.xml -->
+    <eat-comment/>
+    <string name="account_freeze_prompt_dialog_Yesbutton">Unfreeze</string>
+    <string name="account_freeze_prompt_dialog_content">Please click "Unfreeze", unfreeze your account</string>
+    <string name="account_freeze_prompt_dialog_title">Your account has been frozen</string>
+    <string name="account_label">Login LeEco</string>
+    <string name="account_token_failure_dialog_Yesbutton">Log in again</string>
+    <string name="account_token_failure_dialog_content">account or re-enter the password.</string>
+    <string name="account_token_failure_dialog_title">The current account have become invalid, please choose another</string>
+    <string name="action_settings">Settings</string>
+    <string name="bring_paramers_error">Parameter error</string>
+    <string name="cancle">Cancel</string>
+    <string name="channel_filter_no_content">NO content yet#</string>
+    <string name="choose_country_area_title">Country/Region</string>
+    <string name="click_next_step_agree">Click\"Next\"means you agree to </string>
+    <string name="click_send_agree">Click\"Send\"means you agree to </string>
+    <string name="countdown_get_again_text_middle">after </string>
+    <string name="countdown_get_again_text_one">If you do not receive the SMS </string>
+    <string name="countdown_get_again_text_two">S </string>
+    <string name="customer_service_phone">400 030 0104</string>
+    <string name="customer_service_title">Service hotline:</string>
+    <string name="ensure">Confirm</string>
+    <string name="find_password_activity_title">Forgot password</string>
+    <string name="find_password_default_phone_number">1069032901305788</string>
+    <string name="find_password_send_soom">Send</string>
+    <string name="find_password_tip">Edit SMS with 6–16 password sent to</string>
+    <string name="find_password_tip2">Password format is:6–16 letters/numbers/punctuation marks</string>
+    <string name="get_auth_coude_again">Reacquire</string>
+    <string name="hot_play_error_net_null">Network connection fails, check your network</string>
+    <string name="input_error_hint">User name or password is incorrect</string>
+    <string name="input_password">Enter password</string>
+    <string name="input_phone_num">Enter mobile number</string>
+    <string name="input_right_authcode">Please enter the correct activation code</string>
+    <string name="input_right_nickname">Nickname is 4–32 letters, numbers, character and _.</string>
+    <string name="input_right_password">Password format is:6–16 letters/numbers</string>
+    <string name="input_right_phone_num">Please enter the correct phone number</string>
+    <string name="input_right_verification">Please enter the correct CAPTCHA</string>
+    <string name="login_activity_title">Log in LeEco account</string>
+    <string name="login_not_install_weixin">You do not have to install WeChat, please go to download WeChat</string>
+    <string name="login_number_hint_text">Enter Mobile number/email</string>
+    <string name="login_number_hintuser_text">Please enter the correct phone number/email</string>
+    <string name="login_password_hint_text">Enter password</string>
+    <string name="login_password_hintpass_text">Please enter the correct password</string>
+    <string name="login_qq">Tencent QQ login</string>
+    <string name="login_rightvf_hint_text">CAPTCHA is incorrect, please re-enter</string>
+    <string name="login_success">login successful</string>
+    <string name="login_use_other_metherd">Login Other LeEco account</string>
+    <string name="login_vf_hint_text">CAPTCHA</string>
+    <string name="login_weibo">Sina Weibo login</string>
+    <string name="loginshare_activity_title">Log in LeEco</string>
+    <string name="logout_prompt_dialog_content">whether to confirm logout?</string>
+    <string name="logout_prompt_dialog_title">After exiting, your information will not be synchronized, </string>
+    <string name="logout_prompt_dialog_yesbutton">Log out</string>
+    <string name="message_login_authcode_title">Verification code has been sent to your phone</string>
+    <string name="message_register">Sign up via SMS</string>
+    <string name="message_send_success">SMS successfully issued</string>
+    <string name="more_account">Login Other LeEco account</string>
+    <string name="moreaboutusactivity_webtitle">LeEco</string>
+    <string name="net_no">Network connection fails, check your network</string>
+    <string name="next_step">Next</string>
+    <string name="nicknamechange_prompt_dialog_content">save changes?</string>
+    <string name="nicknamechange_prompt_dialog_title">Nickname has been modified, </string>
+    <string name="nicknamechange_prompt_dialog_yesbutton">Save</string>
+    <string name="notevfcode_text">Log in via SMS</string>
+    <string name="now_register">Sign up</string>
+    <string name="password_hint_text2">Eeter password</string>
+    <string name="personalinfo_area">Region</string>
+    <string name="personalinfo_birthday">Birthday</string>
+    <string name="personalinfo_birthday_over_current_date">Birthday more than the current date</string>
+    <string name="personalinfo_day"/>
+    <string name="personalinfo_find_password">Forgot password</string>
+    <string name="personalinfo_gender">Gender</string>
+    <string name="personalinfo_head_image">Profile Photo</string>
+    <string name="personalinfo_head_nickname">Nickname</string>
+    <string name="personalinfo_head_nickname_cannot_empty">Nickname can not be empty</string>
+    <string name="personalinfo_head_nickname_modifyrule">Nickname is 4–32 letters, numbers, character and _.</string>
+    <string name="personalinfo_logout">Log out</string>
+    <string name="personalinfo_men">Male</string>
+    <string name="personalinfo_modify_password">Reset password</string>
+    <string name="personalinfo_no_data">Not set</string>
+    <string name="personalinfo_title">My Profile</string>
+    <string name="personalinfo_update_head_image_failure">Update photos failure</string>
+    <string name="personalinfo_women">Female</string>
+    <string name="personalinfo_year"/>
+    <string name="phone_login">Log in</string>
+    <string name="phone_number_hint_text">Enter mobile number</string>
+    <string name="public_loading_datanull">Did not get to the content#Click to refresh the page</string>
+    <string name="public_loading_no_net">No network connection#Please check your network and refresh the page</string>
+    <string name="public_loading_text">Loading…</string>
+    <string name="register">Sign up</string>
+    <string name="register_check_mob">The phone number are already registered, please login</string>
+    <string name="register_password_subtitle">6–16 letters/numbers/punctuation marks</string>
+    <string name="register_password_title">Password format is:</string>
+    <string name="register_success_to_login">Sign up successful</string>
+    <string name="register_tip">One account.All of LeEco</string>
+    <string name="register_title">Sign up LeEco account</string>
+    <string name="save">Save</string>
+    <string name="seletc_from_camera">Take Photo</string>
+    <string name="seletc_from_image">Choose from Photos</string>
+    <string name="send_message_code_success">Verification code has been sent to your phone</string>
+    <string name="service_agreement">Le Privacy Policy</string>
+    <string name="shortcut_nickname_dialog_content">and better participate in interactive, it proposed to amend the nickname</string>
+    <string name="shortcut_nickname_dialog_subtitle">You currently use the system default nickname for your convenience</string>
+    <string name="shortcut_nickname_dialog_title">Tips</string>
+    <string name="shortcut_nickname_dialog_yesbutton">Modify</string>
+    <string name="skip">Skip</string>
+    <string name="third_part_login_tip">Third-party user without the initial password</string>
+    <string name="toast_auth_code">CAPTCHA</string>
+    <string name="try_again">Refresh Retry</string>
+    <string name="verificationcode_dialog_hint_text">Please enter CAPTCHA</string>
+    <string name="verificationcode_dialog_title">Please enter CAPTCHA</string>
+    <string name="vfcode_hint_text">CAPTCHA</string>
+    <string name="weibosdk_demo_toast_auth_canceled">Deauthorize</string>
+    <string name="weibosdk_demo_toast_auth_failed">Authorization failed</string>
+    <string name="weibosdk_demo_toast_auth_success">Authorization successful</string>
+    <string name="weibosdk_demo_token_has_existed">Token is still valid, without having to log in again</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token:%1$s \nValidity:%2$s</string>
+</resources>

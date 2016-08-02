@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_color">
+
+    <ImageView
+        android:id="@+id/iv_photo_icon"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:src="@drawable/sina_icon"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        />
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="8dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey_text_color"
+        tools:text="@string/nowtime"
+        />
+    <LinearLayout
+        android:layout_toRightOf="@id/iv_photo_icon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/name_long"
+            android:textColor="@color/grey_text_color"
+            android:textSize="11sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxWidth="250dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="3dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/comment_angle"
+                android:layout_marginTop="4dp"
+                />
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="卢卡申科大量款手机丢了卡就是大家拉德斯基阿里看见大家圣诞节啊离开；时间的考拉金德拉克是的撒点sad sad"
+                android:background="@drawable/comment_bg"
+                android:textColor="@color/normal_text_color"
+                android:textSize="11sp"
+                android:gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

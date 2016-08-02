@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigation_bar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/local_gallery_activity_action_bar_bg"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/activity_local_gallery_video_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/local_gallery_activity_action_bar_bg"
+                android:gravity="right|center_vertical"
+                android:paddingRight="30dp"
+                android:text="@string/video"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/activity_local_gallery_photo_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/local_gallery_activity_action_bar_bg"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:text="@string/photo"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <com.leautolink.leautocamera.ui.view.customview.CustomViewPager
+            android:id="@+id/activity_local_gallery_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1" />
+
+        <!--下载分享删除-->
+        <LinearLayout
+            android:id="@+id/gallery_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_marginTop="@dimen/y20"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+
+            <!--删除-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/ibtn_del"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background_color"
+                    android:padding="@dimen/x6"
+                    android:src="@drawable/icon_del" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/no_num"
+            android:textColor="#fff" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listView_email_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:divider="@color/letv_color_e0e0e0"
+        android:dividerHeight="0.5dp"
+        android:smoothScrollbar="false">
+    </ListView>
+
+</LinearLayout>

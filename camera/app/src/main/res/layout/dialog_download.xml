@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/please_wait"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tv_dialog_batch_download_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="@string/life_to_download"
+        android:textSize="13sp" />
+
+    <com.leautolink.leautocamera.ui.view.customview.UnTouchableSeekBar
+        android:layout_marginTop="13dp"
+        android:progressDrawable="@drawable/pro_seekbar"
+        android:thumb="@drawable/seek_bar_btn"
+        android:id="@+id/utsb_dialog_batch_download_progress"
+        android:minHeight="2dp"
+        android:maxHeight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_dialog_batch_download_percentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:id="@+id/tv_dialog_batch_download_current_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="8/9" />
+    </RelativeLayout>
+    <Button
+        android:text="@string/cancel_download"
+        android:background="@android:color/transparent"
+        android:id="@+id/btn_dialog_batch_download_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

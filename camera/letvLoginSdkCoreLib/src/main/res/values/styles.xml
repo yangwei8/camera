@@ -1,0 +1,107 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="letv_text_15_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="letv_text_15sp_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="letv_text_18sp_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="letv_text_13_ff444444">
+        <item name="android:textColor">#ff444444</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <!-- SDK start -->
+    <style name="letv_text_12sp_ff666666">
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="letv_text_14sp_ff666666">
+        <item name="android:textColor">#ff666666</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="letv_text_14sp_ff00a0e9">
+        <item name="android:textColor">#00a0e9</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="popwindow_animationPreview">
+        <item name="android:windowEnterAnimation">@anim/popwindow_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_fade_out</item>
+    </style>
+
+    <!-- 这个是加入的代码 -->
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <!-- 指定显示的动画xml -->
+
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="letv_text_15_ff5d5d5d">
+        <item name="android:textColor">@color/letv_color_ff5d5d5d</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="letv_text_15_444444">
+        <item name="android:textColor">@color/letv_color_444444</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="letv_text_13_ffec8e1f">
+        <item name="android:textColor">@color/letv_color_ffec8e1f</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="letv_text_13_ffa1a1a1">
+        <item name="android:textColor">@color/letv_color_ffa1a1a1</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="letv_text_15_blue_white_style">
+        <item name="android:textColor">@drawable/blue_white_text_selecter</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/btn_blue_selecter</item>
+    </style>
+
+    <style name="prompt_dialog_with_corner" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@drawable/verfication_dialog_shape_corner</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="textview">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#424242</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="textview_bottom">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">1.5dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_marginLeft">3dp</item>
+        <item name="android:layout_marginRight">3dp</item>
+        <item name="android:background">#a0a0a0</item>
+    </style>
+
+</resources>

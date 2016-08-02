@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="letv_color_ffffff">#ffffff</color>
+    <color name="letv_color_ff5dccff">#ff5dccff</color>
+    <color name="letv_color_5895ed">#5895ED</color>
+    <color name="letv_color_ffa1a1a1">#ffa1a1a1</color>
+    <!-- list分割线 -->
+    <color name="letv_color_a0a0a0">#a0a0a0</color>
+    <color name="letv_color_ffdfdfdf">#ffdfdfdf</color>
+    <color name="letv_color_99000000">#99000000</color>
+    <color name="letv_color_ffe9e9e9">#ffe9e9e9</color>
+    <color name="letv_color_e0e0e0">#e0e0e0</color>
+    <color name="letv_color_F1F1F1">#F1F1F1</color>
+    <color name="letv_color_666666">#666666</color>
+    <color name="letv_color_b7b7b7">#b7b7b7</color>
+    <color name="letv_color_00a0e9">#00a0e9</color>
+    <color name="letv_color_0073b4">#0073b4</color>
+    <color name="letv_color_ffffffff">#ffffffff</color>
+    <color name="letv_color_0f000000">#0f000000</color>
+    <color name="letv_color_ff5895ed">#ff5895ed</color>
+    <color name="letv_color_cdcdcd">#cdcdcd</color>
+    <color name="letv_color_cccccc">#cccccc</color>
+    <color name="letv_color_333333">#333333</color>
+    <color name="letv_color_999999">#999999</color>
+    <color name="letv_color_fffafafa">#fffafafa</color>
+    <color name="letv_color_fff6f6f6">#fff6f6f6</color>
+    <color name="province_line_border">#D0D0D0</color>
+    <color name="login_color_ffa1a1a1">#ffDBDBDB</color>
+    <color name="login_color_ffdfdfdf">#ffdfdfdf</color>
+    <color name="letv_color_33000000">#33000000</color>
+    <color name="program_item_trance_white2">#cccccc</color>
+    <color name="letv_color_ff5d5d5d">#ff5d5d5d</color>
+    <color name="letv_color_444444">#444444</color>
+    <color name="letv_color_ffec8e1f">#ffec8e1f</color>
+    <color name="letv_base_bg">#fffafafa</color>
+    <color name="login_color_ff242424">#ff242424</color>
+    <color name="login_color_80dddddd">#80dddddd</color>
+    <color name="login_color_fff6f6f6">#fff6f6f6</color>
+    <color name="login_color_bfbfbf">#bfbfbf</color>
+    <color name="login_color_000000">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="login_color_8dc6ed">#8dc6ed</color>
+	<color name="login_color_F8F8F8">#F8F8F8</color>
+	<color name="login_color_0f93de">#0f93de</color>
+	<color name="login_color_F3F3F3">#F3F3F3</color>
+	<color name="login_color_e7e7e7">#e7e7e7</color>
+	<color name="login_color_6b6b6b">#6b6b6b</color>
+	<color name="login_color_424242">#424242</color>
+</resources>

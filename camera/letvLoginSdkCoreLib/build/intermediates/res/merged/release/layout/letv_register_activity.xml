@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/letv_color_F1F1F1"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp" >
+
+        <ImageView
+            android:id="@+id/imageView_registerActivity_Back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/back_selecter"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/top_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="22dp"/>
+
+        <ImageView
+            android:id="@+id/imageView_registerActivity_Close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="22dp"
+            android:src="@drawable/close_selecter"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/register_tip"
+        style="@style/letv_text_14sp_ff666666"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register_tip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" 
+        android:focusable="true"  
+        android:focusableInTouchMode="true">
+
+        <TextView
+            android:id="@+id/phone_number_line_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/letv_color_b7b7b7" />
+
+        <ImageView
+            android:id="@+id/phone_number_iamgeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_number_line_tv"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="6dp"
+            android:background="@drawable/phone" />
+
+        <RelativeLayout
+            android:id="@+id/phone_code_relativelayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_number_line_tv"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginRight="3dp" >
+
+            <ImageView
+                android:id="@+id/phone_code_imageview"
+                android:layout_width="27dp"
+        		android:layout_height="18dp"
+                android:layout_alignBottom="@+id/phone_code_arrow_right_iamgeview"
+                android:layout_marginBottom="0.5dp"/>
+
+            <ImageView
+                android:id="@+id/phone_code_arrow_right_iamgeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/phone_code_imageview"
+                android:background="@drawable/arrow_right_choose_selector" />
+        </RelativeLayout>
+
+        <com.letv.loginsdk.view.ClearEditText
+            android:id="@+id/phone_number_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/phone_number_line_tv"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/phone_code_relativelayout"
+            android:layout_toRightOf="@+id/phone_number_iamgeview"
+            android:background="@null"
+            android:hint="@string/phone_number_hint_text"
+            android:inputType="phone"
+            android:maxLength="16"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/login_color_bfbfbf"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="17sp" >
+        </com.letv.loginsdk.view.ClearEditText>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_next_step_agree"
+            android:textColor="@color/letv_color_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/click_service_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/service_agreement"
+            android:textColor="@color/letv_color_666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/regist_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="48.5dp"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/btn_blue_selecter"
+        android:gravity="center"
+        android:text="@string/next_step"
+        android:textColor="@color/login_color_8dc6ed"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/message_register_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="3.5dp"
+            android:background="@drawable/message_register_icon"
+            android:visibility="gone"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/message_register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingLeft="6dp"
+            android:paddingTop="3dp"
+            android:visibility="gone"
+            android:text="@string/message_register"
+            android:textColor="@drawable/blue_clicked_text_selecter"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/service_phone_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="15dp"
+            android:text="@string/customer_service_title"
+            android:textColor="@color/letv_color_999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/service_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="7.2dp"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:text="@string/customer_service_phone"
+            android:textColor="@color/letv_color_999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/letv_register_activity.xml -->

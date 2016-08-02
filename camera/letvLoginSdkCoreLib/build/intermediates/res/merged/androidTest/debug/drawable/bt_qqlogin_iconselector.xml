@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+     <item android:state_pressed="false" android:drawable="@drawable/qq_default" />
+   <item android:state_pressed="true"  android:drawable="@drawable/qq_press" />
+   <item android:state_focused="true"  android:drawable="@drawable/qq_press"/>
+    <item android:drawable="@drawable/qq_default"/>
+
+</selector>
+<!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/drawable/bt_qqlogin_iconselector.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/drawable/bt_qqlogin_iconselector.xml -->

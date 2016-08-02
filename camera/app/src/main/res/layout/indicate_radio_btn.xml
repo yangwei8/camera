@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="8dp"
+    android:layout_height="8dp"
+    android:background="@drawable/indicate_background"
+    android:button="@null"
+    android:gravity="center"
+    android:layout_margin="1dp"
+    >
+
+    <!--<item name="android:background">@color/colorPrimary</item>-->
+    <!--<item name="android:textSize">13sp</item>-->
+    <!--<item name="android:button">@null</item>-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--<item name="android:paddingTop">10dp</item>-->
+    <!--<item name="android:textColor">@drawable/home_activity_bottom_bar</item>-->
+</RadioButton>

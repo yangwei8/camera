@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/dialog_title_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6dp"
+        android:text="TextView"
+        android:textColor="@color/letv_color_666666"
+        android:textSize="17sp" />
+
+   <TextView
+        android:id="@+id/dialog_content_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title_tx"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="6dp"
+        android:text="TextView"
+        android:textColor="@color/letv_color_666666"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/button_top_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/dialog_content_tx"
+        android:layout_marginTop="19dp"
+        android:background="@color/letv_color_cccccc" />
+
+    <TextView
+        android:id="@+id/button_middle_line"
+        android:layout_width="1dp"
+        android:layout_height="47dp"
+        android:layout_below="@+id/dialog_content_tx"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/letv_color_cccccc" />
+
+    <TextView
+        android:id="@+id/dialog_no_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/button_middle_line"
+        android:layout_toLeftOf="@+id/button_middle_line"
+        android:gravity="center"
+        android:background="@drawable/dialog_left_button_selector"
+        android:text="@string/cancle"
+        android:textColor="@color/login_color_0f93de"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dialog_yes_tx"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/button_middle_line"
+        android:layout_toRightOf="@+id/button_middle_line"
+        android:gravity="center"
+        android:background="@drawable/dialog_right_button_selector"
+        android:text="TextView"
+        android:textColor="@color/login_color_0f93de"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

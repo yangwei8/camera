@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/bar_layout"
+        layout="@layout/navigation_bar" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_top"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7" />
+
+    <RelativeLayout
+        android:id="@+id/fl_all_contarner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/x450"
+            android:clipChildren="false">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_list"
+                android:layout_width="@dimen/x360"
+                android:layout_height="@dimen/x200"
+                android:layout_centerInParent="true"
+                android:clipChildren="false" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <!--本地照片删除分享-->
+            <LinearLayout
+                android:id="@+id/ll_local_photo_dsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/x210"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/y30">
+                <!--删除-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_local_photo_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_color"
+                        android:paddingBottom="@dimen/y6"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/y6"
+                        android:src="@drawable/icon_del" />
+
+                </LinearLayout>
+
+                <!--分享-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_local_photo_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_color"
+                        android:paddingBottom="@dimen/y6"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/y6"
+                        android:src="@drawable/icon_share" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--本地视频删除,分享-->
+            <LinearLayout
+                android:id="@+id/ll_local_video_dsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/x210"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/y30">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp" />
+                <!--删除-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_local_video_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_color"
+                        android:paddingBottom="@dimen/y6"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/y6"
+                        android:src="@drawable/icon_del" />
+
+                </LinearLayout>
+                <!--分享-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_local_video_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_color"
+                        android:paddingBottom="@dimen/y6"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/y6"
+                        android:src="@drawable/icon_share" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+
+            <!--记录仪下载删除-->
+            <LinearLayout
+                android:id="@+id/ll_camera_dsd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/x210"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/y30">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp" />
+
+                <!--删除-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_camera_del"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_color"
+                        android:paddingBottom="@dimen/y6"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/y6"
+                        android:src="@drawable/icon_del" />
+
+                </LinearLayout>
+                <!--下载-->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_camera_download"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_color"
+                        android:paddingBottom="@dimen/y6"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:paddingTop="@dimen/y6"
+                        android:src="@drawable/icon_download" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

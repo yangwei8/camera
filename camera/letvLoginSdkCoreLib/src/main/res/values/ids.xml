@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- imageview的scaleType -->
+    <item name="scale_type" type="id"></item>
+    <!-- 图片下载库view的tag -->
+    <item name="view_tag" type="id"></item>
+    <!-- imageView是背景属性(src或者background) -->
+    <item name="imageview_atts" type="id"></item>
+    <!-- pagecard找不到view时创建的默认view -->
+    <item name="pagecard_view_default" type="id"></item>
+
+</resources>

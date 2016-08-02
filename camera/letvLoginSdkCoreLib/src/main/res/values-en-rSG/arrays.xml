@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="arrEmailNames">
+        <item>163.com</item>
+        <item>sina.com</item>
+        <item>qq.com</item>
+        <item>sohu.com</item>
+        <item>126.com</item>
+        <item>gmail.com</item>
+        <item>hotmail.com</item>
+        <item>yahoo.com</item>
+        <item>outlook.com</item>
+        <item>foxmail.com</item>
+        <item>letv.com</item>
+    </string-array>
+    <string-array name="monthNameArray">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+</resources>

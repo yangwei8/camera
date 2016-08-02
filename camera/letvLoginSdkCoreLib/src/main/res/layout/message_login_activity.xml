@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/letv_color_F1F1F1" >
+
+    <LinearLayout
+        android:id="@+id/message_loginandregister_outerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp" >
+
+            <ImageView
+                android:id="@+id/imageView_MessageLoginActivity_Back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/back_selecter"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/top_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="22dp" />
+
+            <ImageView
+                android:id="@+id/imageView_MessageLoginActivity_Close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/close_selecter"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/register_tip"
+            style="@style/letv_text_12sp_ff666666"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/register_tip"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" 
+            android:focusable="true"  
+        	android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/phone_number_line_tv"
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/letv_color_b7b7b7" />
+
+            <ImageView
+                android:id="@+id/phone_number_iamgeview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phone_number_line_tv"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="6dp"
+                android:background="@drawable/phone" />
+
+            <com.letv.loginsdk.view.ClearEditText
+                android:id="@+id/message_register_phone_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phone_number_line_tv"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_toLeftOf="@+id/message_register_phone_code_relativelayout"
+                android:layout_toRightOf="@+id/phone_number_iamgeview"
+                android:background="@null"
+                android:hint="@string/phone_number_hint_text"
+                android:inputType="phone"
+                android:maxLength="15"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="@color/login_color_bfbfbf"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="17sp" >
+            </com.letv.loginsdk.view.ClearEditText>
+
+            <RelativeLayout
+                android:id="@+id/message_register_phone_code_relativelayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/phone_number_line_tv"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="3dp" >
+
+                <ImageView
+                    android:id="@+id/message_phone_code_imageview"
+                    android:layout_width="27dp"
+        			android:layout_height="18dp"
+                    android:layout_alignBottom="@+id/phone_code_arrow_right_iamgeview"
+                    android:layout_marginBottom="0.5dp"/>
+
+                <ImageView
+                    android:id="@+id/phone_code_arrow_right_iamgeview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/message_phone_code_imageview"
+                    android:background="@drawable/arrow_right_choose_selector" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal"
+            android:paddingLeft="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/click_next_step_agree"
+                android:textSize="12sp"
+                android:textColor="@color/letv_color_666666" />
+            <TextView
+                android:id="@+id/click_service_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="3dp"
+                android:text="@string/service_agreement"
+                android:textSize="12sp"
+                android:textColor="@color/letv_color_666666" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/short_register_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="48.5dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/btn_blue_selecter"
+            android:gravity="center"
+            android:text="@string/next_step"
+            android:textColor="@color/login_color_8dc6ed"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/service_phone_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/message_loginandregister_outerlayout"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingBottom="15dp"
+            android:text="@string/customer_service_title"
+            android:textColor="@color/letv_color_999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/service_phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="7.2dp"
+            android:clickable="true"
+            android:paddingBottom="15dp"
+            android:text="@string/customer_service_phone"
+            android:textColor="@color/letv_color_999999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

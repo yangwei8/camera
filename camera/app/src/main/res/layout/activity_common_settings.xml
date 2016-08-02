@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lecamera="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/navigation_bar" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_icon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_push_message" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_icon1"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/push_info"
+            android:textColor="@color/normal_text_color"
+            android:textSize="16sp" />
+
+        <com.leautolink.leautocamera.ui.view.customview.SelectButton
+            android:id="@+id/sb_receive_push_msg"
+            style="@style/setting_select_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_icon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_comment_notification" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_icon2"
+            android:drawablePadding="25dp"
+            android:gravity="center_vertical"
+            android:text="@string/say_buttton"
+            android:textColor="@color/normal_text_color"
+            android:textSize="16sp" />
+
+        <com.leautolink.leautocamera.ui.view.customview.SelectButton
+            android:id="@+id/sb_comment_notification"
+            style="@style/setting_select_btn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/iv_icon3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_clean_cache" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_icon3"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/delete_cache"
+            android:textColor="@color/lite_blue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_cache_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:text="0 M"
+            android:textColor="@color/lite_blue"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+        android:id="@+id/siv_about_app"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_marginTop="17dp"
+        android:gravity="center"
+        lecamera:src="@drawable/icon_about_camera"
+        lecamera:text="@string/about_app" />
+
+</LinearLayout>

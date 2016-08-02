@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leautolink.leautocamera.ui.fragment.DiscoverFragment"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_color">
+
+    <include layout="@layout/navigation_bar"/>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_pull_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.leautolink.leautocamera.ui.view.customview.MyListView
+            android:id="@+id/lv_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10dp">
+
+        </com.leautolink.leautocamera.ui.view.customview.MyListView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

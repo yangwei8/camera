@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.leautolink.leautocamera.ui.activity.DetailsActivity">
+
+    <!--include layout="@layout/navigation_bar"/-->
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/navigation_bar_left_ib"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:paddingRight="18dp"
+            android:src="@drawable/go_back" />
+
+        <TextView
+            android:id="@+id/navigation_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/wifi_name"
+            android:textColor="@color/normal_text_color"
+            android:textSize="22sp" />
+
+        <ImageButton
+            android:id="@+id/share_btn"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:background="@android:color/transparent"
+            android:paddingLeft="5dp"
+            android:src="@drawable/icon_share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/header_defaut_icon" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/iv_up_icon"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/discover_fragment_up_icon" />
+
+        <TextView
+            android:id="@+id/tv_up_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/iv_up_icon"
+            android:gravity="center"
+            android:textColor="@color/grey_text_color"
+            android:textSize="15sp"
+            tools:text="@string/activity_details_up_count" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/iv_head_icon"
+            android:layout_toLeftOf="@id/tv_up_num"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="16sp"
+            tools:text="@string/demo_name1" />
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/iv_head_icon"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_toLeftOf="@id/tv_up_num"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/grey_text_color"
+            android:textSize="10sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            tools:text="@string/demo_name2" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:clipToPadding="false">
+
+        <RelativeLayout
+            android:id="@+id/video_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_play_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "00:01"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/grey_text_color"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/iv_top_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_preview_play" />
+
+        <ImageView
+            android:id="@+id/iv_refresh"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/icon_loading_plane"
+            android:visibility="gone" />
+        <!--<SeekBar-->
+            <!--android:id="@+id/sb_play"-->
+            <!--style="@android:style/Widget.SeekBar"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:progressDrawable="@drawable/progress_holo_light"-->
+            <!--android:thumb="@drawable/seek_bar_btn"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--/>-->
+
+
+    </RelativeLayout>
+    <SeekBar
+        android:id="@+id/sb_play"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:maxHeight="1dp"
+        android:minHeight="1dp"
+        android:progressDrawable="@drawable/pro_seekbar"
+        android:thumbTint="@color/lite_blue"
+        android:thumb="@drawable/seek_bar_btn"
+        android:secondaryProgressTint="@color/transparent"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:layout_marginTop="-9dp"
+        android:thumbOffset="5dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_browse_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:drawableLeft="@drawable/discover_fragment_browse_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center"
+            android:textColor="@color/grey_text_color"
+            tools:text="1.1W" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_browse_num"
+            android:text="@string/say"
+            android:textColor="@color/normal_text_color"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_comment"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tv_browse_num"
+            android:gravity="bottom"
+            android:textColor="@color/grey_text_color"
+            tools:text="@string/all_say" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/v_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:background="#30cccccc" />
+    <TextView
+        android:id="@+id/iv_norecord_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1"
+        android:text="@string/no_say"
+        android:textSize="18sp"
+        android:textColor="@color/grey_text_color"
+        android:visibility="gone"
+         />
+    <com.leautolink.leautocamera.ui.view.customview.MyListView
+        android:id="@+id/lv_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/ll__send_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/input_comment_icon" />
+
+        <EditText
+            android:id="@+id/et_input_comment"
+            style="@style/edit_text_style"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@color/local_gallery_activity_action_bar_bg"
+            android:hint="@string/write_say"
+            android:paddingLeft="5dp"
+            android:textColorHint="@color/grey_text_color" />
+
+        <Button
+            android:id="@+id/bt_send_comment"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/normal_btn_selector"
+            android:text="@string/send"
+            android:textColor="@color/normal_text_color" />
+    </LinearLayout>
+
+
+</LinearLayout>

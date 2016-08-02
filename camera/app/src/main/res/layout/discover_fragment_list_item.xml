@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@color/background_color">
+
+    <RelativeLayout
+        android:id="@+id/rl_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="63dp">
+
+        <ImageView
+            android:id="@+id/iv_head_icon"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/header_defaut_icon"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tv_name"
+            android:layout_alignBottom="@id/tv_name"
+            tools:text="北京hahahahhahahahhahahahahahahahha"
+            android:textColor="@color/grey_text_color"
+            android:layout_marginLeft="10dp"
+            android:textSize="10sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:visibility="gone"
+            />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_name"
+            android:layout_alignBottom="@id/iv_head_icon"
+            tools:text="去往北京的幸福之路乐视网汽车生态"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxWidth="190dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_browse_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/grey_text_color"
+            android:gravity="center"
+            tools:text="1.1万"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/discover_fragment_browse_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_up_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_browse_num"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/grey_text_color"
+            tools:text="1.1万"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/discover_fragment_up_icon"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_up_num"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/grey_text_color"
+            tools:text="1.1万"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/discover_fragment_comment_icon"
+            />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="张三"
+            android:textColor="@color/grey_text_color"
+            android:layout_toRightOf="@id/iv_head_icon"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@id/iv_head_icon"
+            android:layout_toLeftOf="@id/tv_comment_num"
+            android:layout_marginRight="10dp"
+            android:textSize="12sp"
+            android:minWidth="50dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_container"
+        android:layout_below="@id/rl_user_info"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_discover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_default"/>
+
+        <ImageView
+            android:id="@+id/iv_video_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_discover_play"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/"/>-->
+
+
+</RelativeLayout>

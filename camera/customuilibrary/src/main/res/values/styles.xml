@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="DialogText">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="DialogText.Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="ProgressDialogText">
+        <item name="android:textColor">#d7d7d7</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="ButtonStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="mProgress_horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@android:drawable/progress_horizontal</item><!-- progress_horizontal -->
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:minHeight">3dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+</resources>

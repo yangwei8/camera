@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/letv_color_F1F1F1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_selecter" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/letv_text_18sp_ff444444"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="6"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:paddingRight="45dp"
+            android:text="@string/message_register" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:text="@string/find_password_tip"
+        android:textColor="@color/letv_color_333333"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/find_password_message_number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:text="@string/find_password_default_phone_number"
+        android:textColor="@color/letv_color_333333"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/find_password_tip2"
+        android:textColor="@color/letv_color_666666"
+        android:textSize="13sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/letv_color_e0e0e0" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="44dip"
+        android:layout_marginTop="5dip"
+        android:paddingLeft="15dp"
+        android:gravity="center|left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/click_send_agree"
+            android:textColor="@color/letv_color_666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/click_service_agreement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="3dp"
+            android:paddingRight="3dp"
+            android:paddingTop="3dp"
+            android:text="@string/service_agreement"
+            android:textColor="@color/letv_color_666666"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/find_password_send_soon_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="48.5dip"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="25dip"
+        android:background="@drawable/btn_blue_selecter"
+        android:gravity="center"
+        android:text="@string/find_password_send_soom"
+        android:textColor="@color/letv_color_ffffff"
+        android:textSize="21sp" />
+
+</LinearLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/message_regist_activity.xml -->

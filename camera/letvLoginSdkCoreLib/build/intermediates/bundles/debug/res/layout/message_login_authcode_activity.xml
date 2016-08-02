@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/letv_color_F1F1F1">
+
+    <ImageView
+        android:id="@+id/imageView_Back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/back_selecter" />
+
+    <TextView
+        android:id="@+id/message_login_authcode_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:gravity="center_horizontal"
+        android:text="@string/message_login_authcode_title"
+        android:textColor="@color/login_color_6b6b6b"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/send_message_phone_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/message_login_authcode_title_text"
+        android:layout_marginTop="18dp"
+        android:text="111****1234"
+        android:textColor="@color/login_color_424242"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="206dp"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="number"
+        android:maxLength="6"
+        android:textColor="@color/letv_color_F1F1F1" 
+        android:textCursorDrawable="@android:color/transparent">
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/text1"
+                style="@style/textview" />
+
+            <TextView
+                android:id="@+id/text2"
+                style="@style/textview" />
+
+            <TextView
+                android:id="@+id/text3"
+                style="@style/textview" />
+
+            <TextView
+                android:id="@+id/text4"
+                style="@style/textview" />
+
+            <TextView
+                android:id="@+id/text5"
+                style="@style/textview" />
+
+            <TextView
+                android:id="@+id/text6"
+                style="@style/textview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal"
+            android:weightSum="6" >
+
+            <TextView
+                android:id="@+id/t1"
+                style="@style/textview_bottom" />
+
+            <TextView
+                android:id="@+id/t2"
+                style="@style/textview_bottom" />
+
+            <TextView
+                android:id="@+id/t3"
+                style="@style/textview_bottom" />
+
+            <TextView
+                android:id="@+id/t4"
+                style="@style/textview_bottom" />
+
+            <TextView
+                android:id="@+id/t5"
+                style="@style/textview_bottom" />
+
+            <TextView
+                android:id="@+id/t6"
+                style="@style/textview_bottom" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/countdown_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView" 
+            android:textColor="@color/letv_color_a0a0a0"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/get_authcode_text_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:text="@string/get_auth_coude_again" 
+            android:textColor="@color/letv_color_a0a0a0"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/message_login_authcode_activity.xml -->

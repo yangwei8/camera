@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/background_color"
+    >
+    <include layout="@layout/navigation_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/storage"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/tv_total_space"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="16G"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/storage_use"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_used_space"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="16G"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:background="@color/setting_activity_item_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:drawablePadding="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/storage_canuse"
+            android:textColor="@color/normal_text_color"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_free_space"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            tools:text="16G"
+            android:gravity="center"
+            android:textColor="@color/normal_text_color"
+            android:layout_marginRight="20dp"
+            />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/bt_formast_sd_card"
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/normal_btn"
+        android:text="@string/format_sd"
+        android:textColor="@color/normal_text_color"/>
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_formast_sd_card"-->
+        <!--android:layout_marginTop="40dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="53dp"-->
+        <!--android:background="@color/setting_activity_item_background">-->
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:background="@color/setting_activity_wire_background" />-->
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:drawablePadding="20dp"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="格式化内存卡"-->
+            <!--android:textColor="@color/normal_text_color"-->
+            <!--android:textSize="15sp" />-->
+
+        <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:background="@color/setting_activity_wire_background" />-->
+
+        <!--&lt;!&ndash;<com.letv.leauto.camera.ui.view.SelectButton&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/bt_formast_sd_card"&ndash;&gt;-->
+        <!--&lt;!&ndash;style="@style/setting_select_btn" />&ndash;&gt;-->
+    <!--</RelativeLayout>-->
+
+
+
+
+
+
+
+</LinearLayout>

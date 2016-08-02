@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.leautolink.leautocamera">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <!-- 集团登录sdk需要的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <application
+        android:name=".application.LeautoCameraAppLication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.leautolink.leautocamera.utils.glideutils.OkHttpGlideModule"
+            android:value="GlideModule" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="56dc2361e0f55ac422000591" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="a0797eb25d25b8be5374e025a3f2087d" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="umeng" />
+        -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f483cba03dd8f7dc8cb64af63553d59c" />
+
+        <!-- 定位需要的服务 -->
+        <service android:name="com.amap.api.location.APSService" />
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" />
+
+        <!--
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        <activity
+            android:name="com.letv.leauto.umengwxlibrary.wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.letv.leauto.umengsinalibrary.WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+
+        <service
+            android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ui.activity.SplashActivity_"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activity.HomeActivity_"
+            android:configChanges="orientation|keyboard|locale|keyboardHidden|screenSize|layoutDirection"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".ui.activity.CameraGalleryActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.SettingCameraActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AboutCameraActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.GalleryPreviewActivity"
+            android:configChanges="orientation|keyboard|locale|keyboardHidden|screenSize|layoutDirection"
+            android:screenOrientation="sensor" />
+        <activity
+            android:name=".ui.activity.SettingPasswordActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/reset_pwd_dialog" />
+        <!-- 云计算播放器 -->
+        <service
+            android:name="com.letvcloud.cmf.MediaService"
+            android:process=":cde" />
+
+        <!-- 乐嗨播放器 -->
+        <!-- <service -->
+        <!-- android:name="com.letv.pp.service.CdeService" -->
+        <!-- android:process=":cde" /> -->
+
+
+        <!--
+            <activity
+            android:name=".ui.activity.ShowLiveActivity_"
+            android:configChanges="orientation|keyboard|locale|keyboardHidden|screenSize|layoutDirection"
+            android:screenOrientation="landscape" />
+        -->
+        <activity
+            android:name=".ui.activity.LocalGalleryActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CameraSdInfoActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.InstallGuideActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.AboutAppActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LiveRemindActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.LemiForumActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.TiroHelpActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name=".receivers.StartupReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".receivers.AlarmReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.le.action.ALARM_CHECK" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.CheckUpdateService"
+            android:process=":checkupdateservice" />
+        <service
+            android:name=".services.CheckUDPService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <!-- 集团登录sdk需要的activity -->
+        <activity
+            android:name="com.letv.loginsdk.activity.LetvLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.LetvRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.LetvRegisterPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.WebViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.MessageLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.MessageRegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.MessageAuthCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.PersonalInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.LetvLoginShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.FindPasswordWebview"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <!-- 修改密码 加登陆状态的 -->
+        <activity
+            android:name="com.letv.loginsdk.activity.webview.ModifyPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.ModifyNickNameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.letv.loginsdk.activity.ChooseCountryAreaActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+
+        <activity
+            android:name="com.leautolink.leautocamera.wxapi.WXEntryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.letv.loginsdk.activity.LetvThirdLoginActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <service
+            android:name="com.letv.loginsdk.AuthenticationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </service>
+
+        <activity
+            android:name=".ui.activity.DiaglogActivity_"
+            android:theme="@style/dialog" />
+        <activity
+            android:name=".ui.activity.DiaglogBluetoothActivity_"
+            android:theme="@style/dialog"/>
+        <activity
+            android:name=".ui.activity.VideoEditActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.UploadFileActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.DetailsActivity_"
+            android:configChanges="orientation|keyboard|locale|keyboardHidden|screenSize|layoutDirection"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.activity.ShareAndUpActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.ShareActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.CommonSettingsActivity_"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.BannerWebActivity_"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ui.activity.HighDefinitionPhotoActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent"/>
+    </application>
+
+</manifest>

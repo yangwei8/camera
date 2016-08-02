@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/letv_color_0f000000" />
+
+    <corners android:bottomLeftRadius="10dp" >
+    </corners>
+
+</shape><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/drawable/dialog_left_button_press_shape_corner.xml -->

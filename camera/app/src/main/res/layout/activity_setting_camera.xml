@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.leautolink.leautocamera.ui.activity.SettingCameraActivity">
+
+    <include layout="@layout/navigation_bar" />
+
+    <EditText
+        android:id="@+id/et_test"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/bt_test"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/yes"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color"
+        android:focusable="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_sound_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/voice"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                    android:id="@+id/bt_sound"
+                    style="@style/setting_select_btn" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"
+                android:text="@string/video_voice_on"
+                android:textSize="12sp"
+                android:textColor="@color/setting_activity_sub_text_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_record_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/recorde"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                    android:id="@+id/bt_record"
+                    style="@style/setting_select_btn" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"
+                android:text="@string/recorde_on"
+                android:textSize="12sp"
+                android:textColor="@color/setting_activity_sub_text_color" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_mark_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/water"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                    android:id="@+id/bt_mark"
+                    style="@style/setting_select_btn" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="66dp"
+                android:text="@string/water_on"
+                android:textColor="@color/setting_activity_sub_text_color"
+                 />
+
+            <RelativeLayout
+                android:layout_marginTop="40dp"
+                android:id="@+id/rl_update_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <TextView
+                    android:id="@+id/wifiPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_wifi_password_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/wifi_passport"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/next_icon" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="107dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="14dp"
+                    android:drawableLeft="@drawable/setting_activity_sensitivity_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center"
+                    android:text="@string/movie_later"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_livedelay"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_delay_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sensitivity_little_btn"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rb_delay_mid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sensitivity_mid_btn"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rb_delay_high"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sensitivity_large_btn"
+                        android:button="@null" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:background="@color/setting_activity_item_background"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_sign_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/sign_edit"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="66dp"
+                    android:background="@color/setting_activity_wire_background" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/next_icon" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="107dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="14dp"
+                    android:drawableLeft="@drawable/setting_activity_resolution_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center"
+                    android:text="@string/dpi_edit"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_resolution"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_resolution_little"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/resolution_little_btn"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rb_resolution_mid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/resolution_mid_btn"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rb_resolution_mid_hdr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/resolution_mid_hdr_btn"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rb_resolution_lagre"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/resolution_large_btn"
+                        android:button="@null" />
+                </RadioGroup>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="107dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="14dp"
+                    android:drawableLeft="@drawable/setting_activity_sensitivity_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center"
+                    android:text="@string/popo_edit"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_sensitivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb_sens_low"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sensitivity_little_btn"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sens_mid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sensitivity_mid_btn"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:id="@+id/rb_sens_high"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sensitivity_large_btn"
+                        android:button="@null" />
+                </RadioGroup>
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_geek_feel_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/sp_ex"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                    android:id="@+id/bt_geek_experience"
+                    style="@style/setting_select_btn" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_geek_experience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="66dp"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/front_crash"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="15sp" />
+
+                    <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                        android:id="@+id/bt_notiy_knock"
+                        style="@style/setting_select_btn" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="66dp"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/road_info"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="15sp" />
+
+                    <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                        android:id="@+id/bt_notiy_offset"
+                        style="@style/setting_select_btn" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="66dp"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/front_info"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="15sp" />
+
+                    <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                        android:id="@+id/bt_notiy_start"
+                        style="@style/setting_select_btn" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="66dp"
+                        android:drawablePadding="20dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/night_info"
+                        android:textColor="@color/normal_text_color"
+                        android:textSize="15sp" />
+
+                    <com.leautolink.leautocamera.ui.view.customview.SelectButton
+                        android:id="@+id/bt_notiy_light"
+                        style="@style/setting_select_btn" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_about_activity"
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_about_edr_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/about"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/next_icon" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_about_edr_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/app_version"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/tv_app_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_update_fw"
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_update_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/mc_update"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/next_icon" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_sd_card_info"
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_sd_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/storage"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/next_icon" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/bt_second_resolution_two"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="2M"
+                    android:textColor="@color/normal_text_color" />
+
+                <Button
+                    android:id="@+id/bt_second_resolution_three"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="3M"
+                    android:textColor="@color/normal_text_color" />
+
+                <Button
+                    android:id="@+id/bt_second_resolution_foure"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="4M"
+                    android:textColor="@color/normal_text_color" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_syn_time"
+                android:layout_width="match_parent"
+                android:layout_height="53dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_syn_time_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/time_update"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_resume_camera"
+                android:layout_width="match_parent"
+                android:layout_height="53dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:drawableLeft="@drawable/setting_activity_recover_icon"
+                    android:drawablePadding="20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/factory"
+                    android:textColor="@color/normal_text_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

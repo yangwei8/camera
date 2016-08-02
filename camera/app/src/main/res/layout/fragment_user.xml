@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lecamera="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/un_login"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_setting_fragment_top">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_head_unsign"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/icon_head_unsign" />
+
+                    <TextView
+                        android:id="@+id/tv_unlogin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:text="@string/no_login"
+                        android:textColor="#808080"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/had_login"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_setting_fragment_top"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/rl_userinfo_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <com.letv.loginsdk.view.CircleImageView
+                        android:id="@+id/civ_pic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@id/civ_pic"
+                        android:text="haha"
+                        android:textColor="@color/grey_text_color"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/icon_arrow_right" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:src="@drawable/line_userfragment" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#000"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_share_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_share_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/icon_share_user" />
+
+                    <TextView
+                        android:id="@+id/tv_shared_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/grey_text_color"
+                        tools:text="( 2 )" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_like_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/iv_like_count"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_like" />
+
+                    <TextView
+                        android:id="@+id/tv_like_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@color/grey_text_color"
+                        tools:text="( 2 )" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:src="@drawable/line_userfragment" />
+
+            <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+                android:layout_marginTop="46dp"
+                android:id="@+id/siv_reset_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                lecamera:src="@drawable/icon_reset_wifi_pwd"
+                lecamera:text="@string/str_lbl_reset_wifi_pwd" />
+
+            <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+                android:id="@+id/siv_update_fw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                lecamera:src="@drawable/setting_activity_update_icon"
+                lecamera:text="@string/dev_update" />
+
+            <View
+                android:id="@+id/line_black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="23dp"
+                android:background="#000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+                android:id="@+id/siv_lemi_community"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                lecamera:src="@drawable/icon_lemi_community"
+                lecamera:text="@string/lemi" />
+
+            <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+                android:id="@+id/siv_tiro_help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                lecamera:src="@drawable/icon_tiro_help"
+                lecamera:text="@string/new_help" />
+
+            <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+                android:id="@+id/siv_install_guide"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                lecamera:src="@drawable/icon_install_guide"
+                lecamera:text="@string/installing_guide" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="23dp"
+                android:background="#000"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+                android:id="@+id/siv_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                lecamera:src="@drawable/icon_contact_us"
+                lecamera:text="@string/contact_to_us" />
+
+            <com.leautolink.leautocamera.ui.view.customview.SettingItemView
+                android:id="@+id/siv_common_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                lecamera:src="@drawable/icon_common_settings"
+                lecamera:text="@string/setting" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

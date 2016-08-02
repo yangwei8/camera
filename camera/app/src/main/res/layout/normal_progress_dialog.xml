@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+    <TextView
+        android:id="@+id/tv_tip_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/normal_text_color"
+        android:text="@string/info_download"
+        />
+    <TextView
+        android:id="@+id/tv_postion_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/normal_text_color"
+        android:text="0/20.8M"
+        />
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        android:layout_marginTop="5dp"
+        android:layout_width="160dp"
+        android:layout_height="8dp"
+        style="@style/mProgress_horizontal"
+        android:progressDrawable="@drawable/pro_seekbar"
+        />
+
+</LinearLayout>

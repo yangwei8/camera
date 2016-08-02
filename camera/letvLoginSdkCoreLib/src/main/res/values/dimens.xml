@@ -1,0 +1,10 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="line_height">1px</dimen>
+    <dimen name="letv_dimens_space_15">15dp</dimen>
+    <dimen name="_image_personal_head_circle_diameter">78px</dimen>
+
+</resources>
