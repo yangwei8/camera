@@ -53,4 +53,4 @@
         android:layout_marginTop="6dp"
         android:background="@drawable/login_check_code_bg" />
 
-</RelativeLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/layout_include_getvfcode.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/layout/layout_include_getvfcode.xml -->
+</RelativeLayout><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/layout/layout_include_getvfcode.xml --><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/layout/layout_include_getvfcode.xml -->

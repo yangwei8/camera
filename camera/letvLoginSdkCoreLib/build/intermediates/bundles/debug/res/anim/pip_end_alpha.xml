@@ -4,4 +4,4 @@
         android:fromAlpha="1.0" 
         android:toAlpha="0.0"
         android:duration="2000"/>
-</set><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/anim/pip_end_alpha.xml -->
+</set><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/anim/pip_end_alpha.xml -->

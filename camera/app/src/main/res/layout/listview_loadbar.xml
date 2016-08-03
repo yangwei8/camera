@@ -14,5 +14,6 @@
         android:text="@string/onloading"
         android:textSize="14sp"
         android:textColor="@color/normal_text_color"
+        android:id="@+id/loadmore"
         />
 </LinearLayout>

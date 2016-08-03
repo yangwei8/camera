@@ -4,4 +4,4 @@
    <item android:state_pressed="true"  android:drawable="@drawable/back_default_press" />
    <item android:state_focused="true"  android:drawable="@drawable/back_default_press"/>
    <item android:drawable="@drawable/back_default_normal"/>
-</selector>   <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/drawable/back_selecter.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/drawable/back_selecter.xml -->
+</selector>   <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/drawable/back_selecter.xml --><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/drawable/back_selecter.xml -->

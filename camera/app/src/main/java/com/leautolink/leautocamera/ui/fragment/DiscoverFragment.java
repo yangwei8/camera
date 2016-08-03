@@ -253,6 +253,7 @@ public class DiscoverFragment extends BaseFragment {
                                 @Override
                                 public void run() {
                                     listView.stopLoadingMore();
+
                                 }
                             });
                         }

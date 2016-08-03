@@ -71,4 +71,4 @@
         android:textColor="@color/login_color_0f93de"
         android:textSize="20sp"/>
 
-</RelativeLayout><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/layout/prompt_dialog_layout.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/layout/prompt_dialog_layout.xml -->
+</RelativeLayout><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/layout/prompt_dialog_layout.xml --><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/layout/prompt_dialog_layout.xml -->

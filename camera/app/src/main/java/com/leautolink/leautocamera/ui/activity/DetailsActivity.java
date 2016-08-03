@@ -711,6 +711,9 @@ public class DetailsActivity extends BaseActivity implements IPlayerListener {
                 public void onSuccess(UserBean userBean) {
                     getVideoDetail();
                     updateUpCount(videoID, LoginManager.getUid(DetailsActivity.this));
+                    // 隐藏输入法
+                    InputMethodManager imm = (InputMethodManager) getApplicationContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.toggleSoftInput(0, InputMethodManager.HIDE_NOT_ALWAYS);
                 }
 
                 @Override

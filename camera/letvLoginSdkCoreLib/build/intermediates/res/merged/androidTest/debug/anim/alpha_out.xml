@@ -2,4 +2,4 @@
 <alpha xmlns:android="http://schemas.android.com/apk/res/android"
     android:interpolator="@android:anim/accelerate_interpolator"
     android:fromAlpha="1.0" android:toAlpha="0.0"
-    android:duration="300" /><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/anim/alpha_out.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/anim/alpha_out.xml -->
+    android:duration="300" /><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/anim/alpha_out.xml --><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/anim/alpha_out.xml -->

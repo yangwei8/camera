@@ -18,4 +18,4 @@
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_pressed="true" android:color="@color/letv_color_ffffffff"/>
     <item android:color="@color/letv_color_ffffffff"/>
-</selector><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/drawable/blue_white_text_selecter.xml --><!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/drawable/blue_white_text_selecter.xml -->
+</selector><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/drawable/blue_white_text_selecter.xml --><!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/drawable/blue_white_text_selecter.xml -->

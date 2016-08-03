@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/arrays.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <string-array name="arrEmailNames">
         <item>163.com</item>
@@ -29,7 +29,7 @@
         <item>11月</item>
         <item>12月</item>
     </string-array>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/colors.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="letv_base_bg">#fffafafa</color>
     <color name="letv_color_0073b4">#0073b4</color>
@@ -78,20 +78,20 @@
     <color name="transparent">#00000000</color>
     <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/></declare-styleable>
     <declare-styleable name="Emojicon"><attr format="dimension" name="emojiconSize"/><attr format="enum" name="emojiconAlignment"><enum name="bottom" value="0"/><enum name="baseline" value="1"/></attr><attr format="integer" name="emojiconTextStart"/><attr format="integer" name="emojiconTextLength"/><attr format="boolean" name="emojiconUseSystemDefault"/></declare-styleable>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/dimens.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="_image_personal_head_circle_diameter">78px</dimen>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="letv_dimens_space_15">15dp</dimen>
     <dimen name="line_height">1px</dimen>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/ids.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values/ids.xml -->
     <eat-comment/>
     <item name="imageview_atts" type="id"/>
     <item name="pagecard_view_default" type="id"/>
     <item name="scale_type" type="id"/>
     <item name="view_tag" type="id"/>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="account_freeze_prompt_dialog_Yesbutton">解冻</string>
     <string name="account_freeze_prompt_dialog_content">请点击解冻，重置密码后登录</string>
@@ -209,7 +209,7 @@
     <string name="weibosdk_demo_toast_auth_success">授权成功</string>
     <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
     <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="letv_text_12sp_ff666666">
         <item name="android:textColor">#ff666666</item>

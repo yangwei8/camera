@@ -3,4 +3,4 @@
     <item android:state_pressed="true" android:color="@color/letv_color_0073b4"/>
     <item android:color="@color/letv_color_00a0e9"/>
 </selector>
-<!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/drawable/blue_clicked_text_selecter.xml -->
+<!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/drawable/blue_clicked_text_selecter.xml -->

@@ -28,6 +28,8 @@ import com.leautolink.leautocamera.ui.base.BaseFragment;
 import com.leautolink.leautocamera.ui.base.BaseFragmentActivity;
 import com.leautolink.leautocamera.ui.fragment.GalleryPagerFragment;
 import com.leautolink.leautocamera.ui.fragment.GalleryPagerFragment_;
+import com.leautolink.leautocamera.ui.fragment.SettingFragment;
+import com.leautolink.leautocamera.ui.view.customview.MaterialDialog;
 import com.leautolink.leautocamera.utils.CleanListUtils;
 import com.leautolink.leautocamera.utils.CustomDialogUtils;
 import com.leautolink.leautocamera.utils.DelUtils;
@@ -104,6 +106,7 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
     private ListingInfo mEventListingInfo;
     private ListingInfo mPhotoListingInfo;
     private ListingInfo mNormalListingInfo;
+    private MaterialDialog alertDialog2;
     //标记相关
     private boolean isFirstCreateActivity = false;
     private boolean selecting = false;
@@ -661,16 +664,11 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
             showToastSafe(getResources().getString(R.string.dialog_choose_file));
             return;
         }
-        showConfirmDialog(getResources().getString(R.string.delete_ok), new OnDialogConfirmListener() {
+        showConfirmDialog(getResources().getString(R.string.delete_ok), new SettingFragment.OnDialogConfirmListener() {
             @Override
             public void onDialogConfirm() {
                 if (selectedIndexs.size() > 0) {
-                    CustomDialogUtils.showDialog(CameraGalleryActivity.this, new CustomDialogCallBack() {
-                        @Override
-                        public void onCancel() {
-                            isCancelDels = true;
-                        }
-                    });
+                    showLoading();
                     ListingInfo listInfo = getCurrentFileInfos(mVp.getCurrentItem());
                     List<ListingInfo.FileInfo> files = listInfo.getListing();
                     dels(files);
@@ -682,15 +680,36 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
 
     }
 
+    @UiThread
+    void showConfirmDialog(final String text, final SettingFragment.OnDialogConfirmListener listener) {
+        if (alertDialog2 == null) {
+            alertDialog2 = new MaterialDialog(this);
+            alertDialog2.setTitle(getString(R.string.base_activity_diglog_tip))
+                    .setMessage(text)
+                    .setPositiveButton(getString(R.string.base_activity_diglog_confirm), new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            dismissDialog();
+                            listener.onDialogConfirm();
+                        }
+                    }).setNegativeButton(getString(R.string.base_activity_diglog_cancel), new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dismissDialog();
+                }
+            }).show();
+
+        }
+    }
 
     @Background
     void dels(final List<ListingInfo.FileInfo> files) {
 
-        if (selectedIndexs.size() > 0 && currentExecuteCount < selectedIndexs.size() && !isCancelDels) {
+if (selectedIndexs.size() > 0 && currentExecuteCount < selectedIndexs.size() && !isCancelDels) {
 
             final ListingInfo.FileInfo file = files.get(selectedIndexs.get(currentExecuteCount));
             Logger.i(TAG, "正在删除的文件为：" + file.getFilename());
-            CustomDialogUtils.setMsg(getResources().getString(R.string.delete));
+            CustomDialogUtils.setMsg(CameraGalleryActivity.this,getResources().getString(R.string.delete));
             CustomDialogUtils.setSeekBarMax(selectedIndexs.size());
             CustomDialogUtils.setCurrentTotal((currentExecuteCount + 1) + " / " + selectedIndexs.size());
             CustomDialogUtils.setProgress(currentExecuteCount);
@@ -719,11 +738,14 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
         } else {
 //            EventBus.getDefault().post(new MultiDelInfosSuccessEvent(delSuccessIndexs,mVp.getCurrentItem()));
             CustomDialogUtils.hideCustomDialog();
+            setSelecting(false);
+            hideLoading();
             showToastSafe(getResources().getString(R.string.delete_success) + succeedCount + getResources().getString(R.string.download_item1)+ selectedIndexs.size() + getResources().getString(R.string.download_item2));
+
 
             notifyDataSetChangeds();
 
-//            hideLoading();
+
         }
     }
 
@@ -747,6 +769,7 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
 
 
         EventBus.getDefault().post(new MultiDelInfosSuccessEvent(delSuccessIndexs, type));
+
 //        listingInfo.setListing(fileInfos);
 //        if (mFragmengts != null) {
 //            ((GalleryPagerFragment) mFragmengts.get(mVp.getCurrentItem())).setData(mVp.getCurrentItem(), listingInfo);
@@ -756,7 +779,12 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
 
         resetDataAfterBatchOption();
     }
-
+    public void dismissDialog() {
+        if (alertDialog2 != null) {
+            alertDialog2.dismiss();
+            alertDialog2 = null;
+        }
+    }
     private ListingInfo getCurrentFileInfos(int index) {
         switch (index) {
             case 0:
@@ -771,6 +799,7 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
                 return null;
         }
     }
+
 
     public boolean isSelecting() {
         return selecting;
@@ -798,4 +827,5 @@ public class CameraGalleryActivity extends BaseFragmentActivity implements View.
         selectedIndexs = event.getDelIndexs();
         Logger.i(TAG, "接收到的被选择的list：" + selectedIndexs.toString());
     }
+
 }

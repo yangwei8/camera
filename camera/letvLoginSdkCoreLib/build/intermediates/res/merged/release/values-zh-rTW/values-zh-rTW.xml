@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values-zh-rTW/arrays.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values-zh-rTW/arrays.xml -->
     <eat-comment/>
     <string-array name="arrEmailNames">
         <item>163.com</item>
@@ -29,7 +29,7 @@
         <item>11月</item>
         <item>12月</item>
     </string-array>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values-zh-rTW/strings.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values-zh-rTW/strings.xml -->
     <eat-comment/>
     <string name="account_freeze_prompt_dialog_Yesbutton">解凍</string>
     <string name="account_freeze_prompt_dialog_content">請點擊解凍，重置密碼后登錄</string>

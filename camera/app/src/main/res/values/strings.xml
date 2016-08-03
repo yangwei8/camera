@@ -369,4 +369,5 @@
     <string name="info_download">您有新的固件版本是否下载?</string>
     <string name="please_input_password">请您输入密码</string>
     <string name="serching">正在搜索....</string>
+    <string name="loadfinish">已经加载完全部信息</string>
 </resources>

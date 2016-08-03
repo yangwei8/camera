@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/values-zh-rTW/values-zh-rTW.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/build/intermediates/bundles/debug/res/values-zh-rTW/values-zh-rTW.xml -->
     <eat-comment/>
     <string-array name="arrEmailNames">
         <item>163.com</item>

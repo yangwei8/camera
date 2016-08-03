@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values-en-rCA/arrays.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values-en-rCA/arrays.xml -->
     <eat-comment/>
     <string-array name="arrEmailNames">
         <item>163.com</item>
@@ -29,7 +29,7 @@
         <item>November</item>
         <item>December</item>
     </string-array>
-    <!-- From: file:/E:/camera/camera/letvLoginSdkCoreLib/src/main/res/values-en-rCA/strings.xml -->
+    <!-- From: file:/E:/CameraSourcetree/camera/letvLoginSdkCoreLib/src/main/res/values-en-rCA/strings.xml -->
     <eat-comment/>
     <string name="account_freeze_prompt_dialog_Yesbutton">Unfreeze</string>
     <string name="account_freeze_prompt_dialog_content">Please click "Unfreeze", unfreeze your account</string>

@@ -69,7 +69,9 @@ public class CustomDialogUtils {
         });
     }
 
-    public static void setMsg(final String msg) {
+    public static void setMsg(Activity activity, final String msg) {
+        mActivity=activity;
+        initView();
         mActivity.runOnUiThread(new Runnable() {
             @Override
             public void run() {

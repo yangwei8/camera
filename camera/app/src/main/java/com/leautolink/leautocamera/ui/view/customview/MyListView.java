@@ -8,6 +8,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.leautolink.leautocamera.R;
 import com.leautolink.leautocamera.utils.Logger;
@@ -36,6 +37,7 @@ public class MyListView extends ListView implements AbsListView.OnScrollListener
 
     /** 底部显示正在加载的页面 */
     private View footerView = null;
+    private TextView loadmore;
 
 
     public MyListView(Context context) {
@@ -77,6 +79,7 @@ public class MyListView extends ListView implements AbsListView.OnScrollListener
             footerView = LayoutInflater.from(this.context).inflate(
                     R.layout.listview_loadbar, null);
         }
+        loadmore= (TextView) footerView.findViewById(R.id.loadmore);
         addFooterView(footerView);
     }
 
@@ -102,6 +105,7 @@ public class MyListView extends ListView implements AbsListView.OnScrollListener
 
     @Override
     public void onScrollStateChanged(AbsListView view, int scrollState) {
+
         //当滑动到底部时
         if (scrollState == SCROLL_STATE_IDLE
                 || scrollState == SCROLL_STATE_FLING) {
@@ -135,8 +139,10 @@ public class MyListView extends ListView implements AbsListView.OnScrollListener
 //            }
             if (getLastVisiblePosition() == totalItemCount -1){
                 isScrllToBottom = true;
+
             }else {
                 isScrllToBottom = false;
+
             }
 
         }
@@ -156,12 +162,14 @@ public class MyListView extends ListView implements AbsListView.OnScrollListener
 
     public void loadingEnd(){
         this.isLoadingMore = false;
+
     }
 
     public void stopLoadingMore(){
 //
-        removeFooterView(footerView);
+        //removeFooterView(footerView);
         this.isLoadingMore = true;
+        loadmore.setText(getResources().getString(R.string.loadfinish));
     }
 
 }
